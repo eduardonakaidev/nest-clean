@@ -1,6 +1,7 @@
 import { Injectable, OnModuleDestroy, OnModuleInit } from '@nestjs/common'
 import { PrismaClient } from '@prisma/client'
 
+// criação do prisma service para ter acesso ao prismaclient
 @Injectable()
 export class PrismaService
   extends PrismaClient
